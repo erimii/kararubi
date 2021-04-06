@@ -33,6 +33,9 @@ const HomeNavigator = () => {
                 options={{
                     title:'Home',
                     headerTitle: () => <LogoImage />,
+                    headerStyle:{
+                        backgroundColor:'#086422'
+                    }
                 }}
             />
             <Stack.Screen

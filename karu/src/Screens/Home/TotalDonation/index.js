@@ -1,7 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-const Container = Styled.SafeAreaView`
+const Container = Styled.View`
     background: #D9D9D9;
     left: 0;
     right: 0;

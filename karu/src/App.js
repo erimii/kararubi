@@ -3,7 +3,7 @@ import {StatusBar} from 'react-native';
 import Navigator from './Screens/Navigator';
 import Styled from 'styled-components/native';
 
-const Contianer =  Styled.View`
+const Contianer =  Styled.SafeAreaView`
   flex:1;
 `
 

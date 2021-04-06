@@ -86,6 +86,7 @@ const ProductDetail = () => {
             />
             <Modal
                 isVisible={modalVisible}
+                avoidKeyboard={true}
                 onBackdropPress={() => setModalVisible(false)}
                 style={{justifyContent: 'flex-end', margin: 0 , }}
             >

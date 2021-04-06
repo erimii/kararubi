@@ -20,7 +20,7 @@ const Home = ({navigation}) => {
     const scrollY = new Animated.Value(0)
     const translateY = scrollY.interpolate({
         inputRange:[0,50],
-        outputRange:[0,30]
+        outputRange:[0,50]
     })
 
     useLayoutEffect(() => {
@@ -46,6 +46,7 @@ const Home = ({navigation}) => {
             showsVerticalScrollIndicator ={false}
             onScroll={(e)=>{
                 scrollY.setValue(e.nativeEvent.contentOffset.y)
+                console.log(scrollY)
             }}>
             <Explain>Home</Explain>
 
