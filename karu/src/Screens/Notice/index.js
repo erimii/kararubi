@@ -2,6 +2,8 @@ import React,{useLayoutEffect} from 'react';
 import Styled from 'styled-components';
 
 import Button from '~/Components/Button';
+import NotificationList from './NotificationList';
+
 
 const Container = Styled.SafeAreaView`
 `;
@@ -35,6 +37,10 @@ const Notice = ({navigation}) => {
     return(
         <Container>
             <Explain>Notice</Explain>
+            <NotificationList
+                onPress={(id) => {
+                    /* navigation.navigate('Detail',{id}) */
+                }} />
         </Container>
     );
 };
