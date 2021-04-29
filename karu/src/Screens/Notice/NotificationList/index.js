@@ -43,7 +43,7 @@ const NotificationList = ({onPress}) => {
         <NotificationContainer
         activeOpacity={0.7}
           onPress={() => {
-            onPress(dataList.id);
+            onPress(item.id);
           }}>
           <Message numberOfLines={2}>
             <LabelName>{item.title}</LabelName> 호롤롤로롤로 모금 완료!

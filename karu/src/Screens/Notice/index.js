@@ -12,7 +12,7 @@ const Explain = Styled.Text`
     font-size:50px;
 `;
 
-const Notice = ({navigation}) => {
+const Notice = ({navigation,}) => {
     useLayoutEffect(() => {
         navigation.setOptions({
             headerRight: () => (
@@ -39,7 +39,7 @@ const Notice = ({navigation}) => {
             <Explain>Notice</Explain>
             <NotificationList
                 onPress={(id) => {
-                    /* navigation.navigate('Detail',{id}) */
+                    navigation.navigate('ProductDetail',{id})
                 }} />
         </Container>
     );

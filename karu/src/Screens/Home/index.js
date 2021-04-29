@@ -44,6 +44,7 @@ const Home = ({navigation}) => {
         <>
         <Container
             showsVerticalScrollIndicator ={false}
+            scrollEventThrottle={10} //ios
             onScroll={(e)=>{
                 scrollY.setValue(e.nativeEvent.contentOffset.y)
                 console.log(scrollY)
@@ -51,14 +52,34 @@ const Home = ({navigation}) => {
             <Explain>Home</Explain>
 
             <Button
-                label="ProductDetail"
+                label="Lottie"
                 style={{}}
-                onPress={() => {navigation.navigate('ProductDetail')}}
+                onPress={() => {navigation.navigate('Lottie')}}
             />
             <Button
                 label="MyPage"
                 style={{}}
                 onPress={() => {navigation.navigate('MyPage')}}
+            />
+            <Button
+                label="Settings"
+                style={{}}
+                onPress={() => {navigation.navigate('Settings')}}
+            />
+            <Button
+                label="GNTDetail"
+                style={{}}
+                onPress={() => {navigation.navigate('GNTDetail')}}
+            />
+            <Button
+                label="ChartsWrapper"
+                style={{}}
+                onPress={() => {navigation.navigate('ChartsWrapper')}}
+            />
+            <Button
+                label="PieChart"
+                style={{}}
+                onPress={() => {navigation.navigate('PieChart')}}
             />
             <ProfileCard />
             <Promotion />
